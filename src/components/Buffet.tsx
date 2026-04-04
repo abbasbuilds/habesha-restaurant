@@ -66,7 +66,7 @@ export function Buffet() {
             className="aspect-[4/3] rounded-2xl overflow-hidden relative"
           >
             <Image
-              src="https://images.unsplash.com/photo-1698751963561-f567afae288e?w=900&auto=format&fit=crop&q=80"
+              src="https://images.unsplash.com/photo-1682495889756-9229b479faaf?w=900&auto=format&fit=crop&q=80"
               alt="Vegetarian Ethiopian buffet spread"
               fill
               className="object-cover"
