@@ -33,7 +33,7 @@ export function Buffet() {
             </p>
 
             <div className="inline-flex items-baseline gap-2 px-8 py-5 bg-brand-green/25 border border-brand-gold/20 rounded-2xl mb-8">
-              <span className="font-oswald text-brand-gold text-5xl font-light">$20</span>
+              <span className="font-oswald text-brand-gold text-5xl font-light">$25</span>
               <span className="font-dm text-brand-cream/50 text-sm uppercase tracking-[0.1em]">
                 + per person
               </span>
@@ -66,7 +66,7 @@ export function Buffet() {
             className="aspect-[4/3] rounded-2xl overflow-hidden relative"
           >
             <Image
-              src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=900&auto=format&fit=crop&q=80"
+              src="https://images.unsplash.com/photo-1698751963561-f567afae288e?w=900&auto=format&fit=crop&q=80"
               alt="Vegetarian Ethiopian buffet spread"
               fill
               className="object-cover"
@@ -76,7 +76,7 @@ export function Buffet() {
             <div className="absolute inset-0 bg-gradient-to-t from-brand-dark/70 via-transparent to-transparent" />
             <div className="absolute bottom-0 left-0 right-0 p-6">
               <span className="font-oswald text-brand-gold text-xl uppercase tracking-wide">
-                Vegetarian Buffet — From $20+
+                Vegetarian Buffet — From $25+
               </span>
             </div>
           </motion.div>
