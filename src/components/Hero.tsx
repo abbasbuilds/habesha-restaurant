@@ -9,7 +9,7 @@ export function Hero() {
       <div
         className="absolute inset-0 z-0 bg-cover bg-center"
         style={{
-          backgroundImage: `url('https://images.unsplash.com/photo-1567529692333-de9fd6272f4e?w=1920&auto=format&fit=crop&q=80')`,
+          backgroundImage: `url('https://images.unsplash.com/photo-1593252719532-53f183016149?w=1920&auto=format&fit=crop&q=80')`,
           backgroundPosition: "center 40%",
         }}
       />

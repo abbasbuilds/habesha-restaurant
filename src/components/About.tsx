@@ -81,7 +81,7 @@ export function About() {
             {/* Main photo — injera spread */}
             <div className="relative h-80 rounded-2xl overflow-hidden">
               <Image
-                src="https://images.unsplash.com/photo-1567529692333-de9fd6272f4e?w=800&auto=format&fit=crop&q=80"
+                src="https://images.unsplash.com/photo-1765338915553-6e02fe63ff4f?w=800&auto=format&fit=crop&q=80"
                 alt="Ethiopian injera spread — Habesha Restaurant"
                 fill
                 className="object-cover"
@@ -102,7 +102,7 @@ export function About() {
               </div>
               <div className="relative h-48 rounded-xl overflow-hidden">
                 <Image
-                  src="https://images.unsplash.com/photo-1565299507177-b0ac66763828?w=600&auto=format&fit=crop&q=80"
+                  src="https://images.unsplash.com/photo-1593787614887-004b2ffb0057?w=600&auto=format&fit=crop&q=80"
                   alt="Ethiopian tibs dish"
                   fill
                   className="object-cover"
