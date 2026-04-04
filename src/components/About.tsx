@@ -100,15 +100,13 @@ export function About() {
                   unoptimized
                 />
               </div>
-              {/* Real restaurant exterior photo via Instagram embed */}
-              <div className="h-48 rounded-xl overflow-hidden border border-brand-gold/10">
-                <iframe
-                  src="https://www.instagram.com/p/DPXYDQ5Dqr3/embed/"
-                  width="100%"
-                  height="192"
-                  style={{ border: 0, display: "block", pointerEvents: "none" }}
-                  scrolling="no"
-                  title="Habesha Restaurant exterior — 99 Montreal Rd"
+              <div className="relative h-48 rounded-xl overflow-hidden">
+                <Image
+                  src="https://images.unsplash.com/photo-1565299507177-b0ac66763828?w=600&auto=format&fit=crop&q=80"
+                  alt="Ethiopian tibs dish"
+                  fill
+                  className="object-cover"
+                  unoptimized
                 />
               </div>
             </div>

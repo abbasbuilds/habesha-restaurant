@@ -81,24 +81,6 @@ export function OwnerStory() {
               </span>
             </div>
 
-            {/* Exterior building photo — Instagram post embed */}
-            <div>
-              <p className="font-dm text-brand-cream/30 text-[0.65rem] uppercase tracking-[0.2em] mb-3">
-                Find us at 99 Montreal Rd, Vanier
-              </p>
-              <div className="rounded-xl overflow-hidden border border-brand-gold/12 max-w-[360px]">
-                <iframe
-                  src="https://www.instagram.com/p/DPXYDQ5Dqr3/embed/"
-                  width="360"
-                  height="440"
-                  style={{ border: 0, display: "block", width: "100%" }}
-                  scrolling="no"
-                  allowFullScreen
-                  title="Habesha Restaurant — 99 Montreal Rd exterior"
-                />
-              </div>
-            </div>
-
           </motion.div>
         </div>
       </div>
