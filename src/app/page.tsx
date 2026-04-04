@@ -1,6 +1,7 @@
 import { Navbar } from "@/components/Navbar";
 import { Hero } from "@/components/Hero";
 import { Marquee } from "@/components/Marquee";
+import { OwnerStory } from "@/components/OwnerStory";
 import { About } from "@/components/About";
 import { EthiopianBorder } from "@/components/EthiopianBorder";
 import { Menu } from "@/components/Menu";
@@ -17,6 +18,8 @@ export default function Home() {
       <Navbar />
       <Hero />
       <Marquee />
+      <OwnerStory />
+      <EthiopianBorder id="hr-story-about" flip />
       <About />
       <EthiopianBorder id="hr-ab-menu" />
       <Menu />
