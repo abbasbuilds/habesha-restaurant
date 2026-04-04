@@ -1,9 +1,10 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const stats = [
-  { value: "4.6", label: "Star Rating" },
+  { value: "4.6★", label: "Star Rating" },
   { value: "633", label: "Google Reviews" },
   { value: "100%", label: "Halal Certified" },
   { value: "11am", label: "Open Daily" },
@@ -13,39 +14,19 @@ export function About() {
   return (
     <section id="about" className="py-24 lg:py-36 bg-brand-dark">
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
-        <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
-          {/* Stats grid */}
+        <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-start">
+
+          {/* Left — text + stats */}
           <motion.div
             initial={{ opacity: 0, x: -24 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="grid grid-cols-2 gap-px bg-brand-gold/10 border border-brand-gold/10 rounded-2xl overflow-hidden"
           >
-            {stats.map(({ value, label }) => (
-              <div
-                key={label}
-                className="bg-brand-charcoal px-8 py-10 flex flex-col gap-2"
-              >
-                <span className="font-oswald text-[3rem] text-brand-gold font-light leading-none">
-                  {value}
-                </span>
-                <span className="font-dm text-brand-cream/45 text-xs uppercase tracking-[0.15em]">
-                  {label}
-                </span>
-              </div>
-            ))}
-          </motion.div>
-
-          {/* Text */}
-          <motion.div
-            initial={{ opacity: 0, x: 24 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: 0.15 }}
-          >
-            <span className="font-dm text-brand-gold uppercase tracking-[0.28em] text-[0.68rem] font-medium mb-5 block">
+            <span className="font-dm text-brand-gold uppercase tracking-[0.28em] text-[0.68rem] font-medium mb-5 flex items-center gap-2">
+              <span className="text-[#DA291C] text-[8px]">◆</span>
               Who We Are
+              <span className="text-[#078930] text-[8px]">◆</span>
             </span>
             <h2 className="font-oswald text-brand-cream text-[clamp(2.5rem,5.5vw,4.5rem)] leading-[0.92] font-light uppercase mb-8">
               The Heart of Ethiopian Ottawa.
@@ -67,7 +48,70 @@ export function About() {
                 High chairs available. Family welcome. Community first.
               </p>
             </div>
+
+            {/* Stats grid */}
+            <div className="grid grid-cols-2 gap-px mt-10 border border-brand-gold/12 rounded-xl overflow-hidden">
+              {stats.map(({ value, label }, i) => (
+                <div
+                  key={label}
+                  className="bg-brand-charcoal px-6 py-7 flex flex-col gap-1 border-t-[3px]"
+                  style={{
+                    borderTopColor: ["#DA291C", "#FCDD09", "#078930", "#D4A820"][i],
+                  }}
+                >
+                  <span className="font-oswald text-brand-gold text-[2.8rem] font-light leading-none">
+                    {value}
+                  </span>
+                  <span className="font-dm text-brand-cream/35 text-[0.68rem] uppercase tracking-[0.15em]">
+                    {label}
+                  </span>
+                </div>
+              ))}
+            </div>
           </motion.div>
+
+          {/* Right — photos */}
+          <motion.div
+            initial={{ opacity: 0, x: 24 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.15 }}
+            className="flex flex-col gap-4"
+          >
+            {/* Main photo */}
+            <div className="relative h-80 rounded-2xl overflow-hidden">
+              <Image
+                src="https://images.unsplash.com/photo-1567529692333-de9fd6272f4e?w=800&auto=format&fit=crop&q=80"
+                alt="Ethiopian injera spread — Habesha Restaurant"
+                fill
+                className="object-cover"
+                unoptimized
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-brand-dark/40 to-transparent" />
+            </div>
+            {/* Two smaller photos */}
+            <div className="grid grid-cols-2 gap-4">
+              <div className="relative h-48 rounded-xl overflow-hidden">
+                <Image
+                  src="https://images.unsplash.com/photo-1631166092772-d07aed54b9a0?w=600&auto=format&fit=crop&q=80"
+                  alt="Ethiopian coffee ceremony — jebena"
+                  fill
+                  className="object-cover"
+                  unoptimized
+                />
+              </div>
+              <div className="relative h-48 rounded-xl overflow-hidden">
+                <Image
+                  src="https://images.unsplash.com/photo-1565299507177-b0ac66763828?w=600&auto=format&fit=crop&q=80"
+                  alt="Ethiopian tibs dish"
+                  fill
+                  className="object-cover"
+                  unoptimized
+                />
+              </div>
+            </div>
+          </motion.div>
+
         </div>
       </div>
     </section>

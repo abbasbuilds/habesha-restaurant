@@ -2,6 +2,7 @@ import { Navbar } from "@/components/Navbar";
 import { Hero } from "@/components/Hero";
 import { Marquee } from "@/components/Marquee";
 import { About } from "@/components/About";
+import { EthiopianBorder } from "@/components/EthiopianBorder";
 import { Menu } from "@/components/Menu";
 import { Buffet } from "@/components/Buffet";
 import { Events } from "@/components/Events";
@@ -17,8 +18,11 @@ export default function Home() {
       <Hero />
       <Marquee />
       <About />
+      <EthiopianBorder id="hr-ab-menu" />
       <Menu />
+      <EthiopianBorder id="hr-menu-buf" flip />
       <Buffet />
+      <EthiopianBorder id="hr-buf-ev" />
       <Events />
       <Reviews />
       <VisitUs />
