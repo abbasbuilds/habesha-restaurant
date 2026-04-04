@@ -15,8 +15,8 @@ export function Hero() {
       />
 
       {/* Overlays */}
-      <div className="absolute inset-0 z-[1] bg-gradient-to-b from-brand-dark/80 via-brand-dark/55 to-brand-dark/90" />
-      <div className="absolute inset-0 z-[2] bg-gradient-to-r from-brand-dark/85 via-brand-dark/45 to-transparent" />
+      <div className="absolute inset-0 z-[1] bg-gradient-to-b from-brand-dark/55 via-brand-dark/25 to-brand-dark/70" />
+      <div className="absolute inset-0 z-[2] bg-gradient-to-r from-brand-dark/70 via-brand-dark/25 to-transparent" />
 
       {/* Ethiopian green tint — upper left */}
       <div className="absolute inset-0 z-[3] bg-[radial-gradient(ellipse_40%_35%_at_15%_25%,_rgba(31,59,23,0.4)_0%,_transparent_70%)]" />
