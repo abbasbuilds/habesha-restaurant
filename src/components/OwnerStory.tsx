@@ -36,15 +36,16 @@ export function OwnerStory() {
             className="flex justify-center"
           >
             <div className="w-full max-w-[380px] rounded-2xl overflow-hidden border border-brand-gold/15 shadow-2xl shadow-brand-dark/60">
-              <iframe
-                src="https://www.instagram.com/reel/DO5_oESEqes/embed/"
-                width="380"
-                height="620"
-                style={{ border: 0, display: "block", width: "100%" }}
-                scrolling="no"
-                allowFullScreen
-                title="Habesha Restaurant — Owner story reel"
-              />
+              <div className="relative w-full" style={{ paddingBottom: "163%" }}>
+                <iframe
+                  src="https://www.instagram.com/reel/DO5_oESEqes/embed/"
+                  className="absolute inset-0 w-full h-full"
+                  style={{ border: 0 }}
+                  scrolling="no"
+                  allowFullScreen
+                  title="Habesha Restaurant — Owner story reel"
+                />
+              </div>
             </div>
           </motion.div>
 

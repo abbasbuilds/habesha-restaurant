@@ -39,7 +39,7 @@ export function Buffet() {
               </span>
             </div>
 
-            <div className="flex gap-6">
+            <div className="flex flex-wrap sm:flex-nowrap gap-4 sm:gap-6">
               <div>
                 <p className="font-oswald text-brand-cream text-lg uppercase font-medium">Mon – Sat</p>
                 <p className="font-dm text-brand-cream/40 text-xs uppercase tracking-[0.1em]">Days available</p>

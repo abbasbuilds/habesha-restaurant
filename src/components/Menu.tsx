@@ -76,7 +76,7 @@ export function Menu() {
             <button
               key={id}
               onClick={() => setActive(id)}
-              className={`px-6 py-2.5 rounded-full font-dm text-xs tracking-[0.12em] uppercase transition-all ${
+              className={`px-4 sm:px-6 py-2 sm:py-2.5 rounded-full font-dm text-xs tracking-[0.12em] uppercase transition-all ${
                 active === id
                   ? "bg-brand-gold text-brand-dark font-semibold"
                   : "border border-brand-gold/20 text-brand-cream/50 hover:border-brand-gold/40 hover:text-brand-cream"
